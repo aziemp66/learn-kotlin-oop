@@ -1,4 +1,4 @@
-package data
+package data.constructor
 
 class Person(
   firstNameParam: String,
@@ -7,9 +7,5 @@ class Person(
 ) {
   var firstName: String = firstNameParam
   var middleName: String? = middleNameParam
-  private val lastname: String = lastNameParam
-
-  init {
-    println("Hello! $firstName ${middleName} $lastname")
-  }
+  val lastname: String = lastNameParam
 }

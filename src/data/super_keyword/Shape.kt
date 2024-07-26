@@ -7,13 +7,3 @@ open class Shape {
     println("Shape")
   }
 }
-
-class Rectangle : Shape() {
-  override val corner = 4
-  val parentCorner = super.corner
-
-  override fun printName() {
-    println("This is Rectangle, with the parent => ")
-    super.printName()
-  }
-}

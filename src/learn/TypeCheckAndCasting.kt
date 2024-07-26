@@ -11,6 +11,10 @@ fun main() {
   printObjectIf(master_race)
   printObjectWhen(tuf_f15)
   printObjectWhen(devices)
+
+  val s = "Laptop is more mobile than computer"
+  printUnsafeCast(s)
+  printSafeCast(devices)
 }
 
 fun printObjectIf(x: Any): Unit {
@@ -32,4 +36,14 @@ fun printObjectWhen(x: Any): Unit {
     else ->
       println(x)
   }
+}
+
+fun printUnsafeCast(x: Any): Unit {
+  val value = x as String
+  println(value)
+}
+
+fun printSafeCast(x: Any): Unit {
+  val value : String? = x as? String
+  println(value)
 }

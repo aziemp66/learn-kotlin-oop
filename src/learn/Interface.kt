@@ -6,4 +6,5 @@ fun main() {
   val dog = Dog()
   dog.sayHello("Cat")
   dog.milk()
+  dog.talk()
 }

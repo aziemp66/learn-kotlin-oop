@@ -9,7 +9,8 @@ class Dog : Animal,Mammals{
   }
 
   override fun talk() {
-    super.talk()
+    super<Animal>.talk()
+    super<Mammals>.talk()
     println("Meow ${this.name}")
   }
 }
